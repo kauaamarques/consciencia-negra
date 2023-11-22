@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: font3;
+  src: url(African\ Style.ttf);
+}
+
+
+
+header h2{
+  font-family: font3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(94, 44, 3);
+    
+}
+
+a{
+    color: #1398;
+    text-decoration: none;
+}
+
+.main-header{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.main-header h1{
+    font-size: 4em;
+    margin-bottom: 1em;
+    line-height: 1.2em;
+    font-family: font4;}
+
+  
+  .main-header h1 span {
+    color: rgb(255, 255, 0);
+  }
+
+  .container{
+    max-width: 1100px;
+    margin: auto;
+    overflow:hidden;
+    padding: 0 2em;
+
+  }
+
+  .card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    gap: 1em;
+    background-color: rgba(0, 0, 0, 0.493);
+   text-align: justify;
+   
+   
+  }
+  img{
+    width: 100%;
+  }
+  .card h3{
+    margin-bottom: 2em;
+  }
+  .card div{
+    padding: 2em;
+  }
+
+  .card:nth-child(even) img{
+    order: 2
+  }
+  .btn{
+    background: rgb(82, 47, 3);
+    display: inline-block;
+    color: #050404;
+    padding: 0.7em 1.8em;
+    margin-top: 2em;
+    cursor: grab;
+  }
+
+  .btn:hover{
+    background-color: #fffb00;
+    opacity: 0.7;
+    box-shadow:6px 6px 4px #064904;
+    color: #ff0000;
+  }
+
+  .galeria{
+    display: flex;
+    height: 20em;
+    margin: 2em;
+    gap: 0.5em;
+  }
+
+  .galeria div{
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+ .galeria div:hover{
+  flex: 3;
+ }
+ 
+ .galeria:hover div:not(:hover) {
+    filter: blur(4px) grayscale(100%) opacity(50%);
+    
+ }
+
+ footer {
+  background: rgb(0, 0, 0);
+ }
+
+ 
